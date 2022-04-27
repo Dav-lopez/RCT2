@@ -1,30 +1,28 @@
-
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Product from './components/Product/Product';
+import Footer from './components/Footer/Footer';
+import { Routes, Route} from "react-router-dom";
 
-import General from './Component/General/General';
-import Header from './Component/Header/Header';
-import Profile from './Component/Profile/Profile';
-import School from './Component/School/School';
-import Work from './Component/Wrkexp/Work';
 
 function App() {
   return (
-    <div className='page'>
-      <Header/>
-      <div className = 'container'>
-        <div className = 'row'> 
-        <div className = 'col1'>
-          <Profile/>
-        </div>
-         <div className = 'col2'>
-          <General/>
-          <School/>
-          <Work/>
-        </div>
-        </div>
+    <div className="App">
+      <Navbar />
+      <Home />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+      <div className=''>
         
-      </div >
-      
+      </div>
     </div>
   );
 }
