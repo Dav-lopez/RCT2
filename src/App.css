@@ -1,0 +1,36 @@
+body {
+  background-color: #cbec0e;
+  color: white;
+  padding: 40px;
+  font-family: Sans-Serif;
+  text-align: center;
+  height: 100%;
+}
+
+
+.col1 {
+  float: left;
+  width: 40%;
+}
+
+.col2{
+  float: right;
+  width: 60%;
+}
+.BG{
+  background-color:gold;
+}
+.page{
+  height: 100%;
+}
+.ft{
+      
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 10px;
+  background: grey;
+  position: fixed;
+
+}
